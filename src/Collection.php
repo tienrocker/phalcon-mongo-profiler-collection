@@ -15,7 +15,7 @@ namespace tienrocker;
  * # After init $di variable
  *
  * Phalcon profiler
- * $di->setShared('profiler', function () use ($di, $config) { if (isset($config->debug) && (bool)$config->debug === true) {return new \Fabfuel\Prophiler\Profiler();}return null;});
+ * $di->setShared('profiler', function () use ($di, $config) { if (isset($config->application->debug) && (bool)$config->application->debug === true) {return new \Fabfuel\Prophiler\Profiler();}return null;});
  *
  * # Bottom of page
  *
