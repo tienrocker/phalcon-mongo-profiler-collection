@@ -1,0 +1,15 @@
+{
+    "name": "tienrocker/phalcon-mongo-profiler-collection",
+    "description": "Custom collection for mongodb profiler",
+    "type": "php, package, mongodb, phalcon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tien tran",
+            "email": "tienrocker@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+	"version": "0.0.1"
+}
