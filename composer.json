@@ -1,18 +1,18 @@
 {
-    "name": "tienrocker/phalcon-mongo-profiler-collection",
-    "description": "Custom collection for mongodb profiler",
-    "type": "library",
-	"minimum-stability": "stable",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "tien tran",
-            "email": "tienrocker@gmail.com"
-        }
-    ], 
-	"autoload": {
-        "psr-0": {
-            "\\": "src/"
-        }
+  "name": "tienrocker/phalcon-mongo-profiler-collection",
+  "description": "Custom collection for mongodb profiler",
+  "type": "library",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "tien tran",
+      "email": "tienrocker@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-0": {
+      "\\tienrocker\\": "src/"
+    }
+  }
 }

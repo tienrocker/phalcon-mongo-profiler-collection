@@ -1,5 +1,7 @@
 <?php
 
+namespace tienrocker;
+
 /**
  * Class Collection
  *
