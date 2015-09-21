@@ -11,8 +11,8 @@
     }
   ],
   "autoload": {
-    "psr-0": {
-      "\\tienrocker\\": "src/"
-    }
-  }
+	"psr-4": {
+		"tienrocker\\": "src/"
+	}
+}
 }
