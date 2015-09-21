@@ -9,9 +9,7 @@
             "name": "tien tran",
             "email": "tienrocker@gmail.com"
         }
-    ],
-    "require": {},
-	"version": "0.0.1",
+    ], 
 	"autoload": {
         "psr-0": {
             "\\": "src/"
