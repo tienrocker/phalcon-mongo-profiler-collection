@@ -1,7 +1,8 @@
 {
     "name": "tienrocker/phalcon-mongo-profiler-collection",
     "description": "Custom collection for mongodb profiler",
-    "type": "php, package, mongodb, phalcon",
+    "type": "library",
+	"minimum-stability": "stable",
     "license": "MIT",
     "authors": [
         {
@@ -9,7 +10,11 @@
             "email": "tienrocker@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {},
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"autoload": {
+        "psr-0": {
+            "\\": "src/"
+        }
+    },
 }
