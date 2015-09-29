@@ -192,7 +192,9 @@ class Collection extends \Phalcon\Mvc\Collection
              * Check if a "sort" clause was defined
              */
             if (isset($params['sort'])) {
-                $sql .= ' ORDER BY ' . implode(', ', $params['sort']);
+                $sql .= ' ORDER BY ' . implode(', ', array_map(function ($v, $k) {
+                        return sprintf("%s %s", $k, ($v==1) ? 'ASC' : 'DESC');
+                    }, $params['sort'], array_keys($params['sort'])));
             }
 
             /**
@@ -262,12 +264,13 @@ class Collection extends \Phalcon\Mvc\Collection
                     }, $params[0], array_keys($params[0]))) . ' ';
             }
 
-
             /**
              * Check if a "sort" clause was defined
              */
             if (isset($params['sort'])) {
-                $sql .= ' ORDER BY ' . implode(', ', $params['sort']);
+                $sql .= ' ORDER BY ' . implode(', ', array_map(function ($v, $k) {
+                        return sprintf("%s %s", $k, ($v==1) ? 'ASC' : 'DESC');
+                    }, $params['sort'], array_keys($params['sort'])));
             }
 
             /**
